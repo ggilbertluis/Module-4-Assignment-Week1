@@ -12,7 +12,7 @@ data$Sub_metering_2<- as.numeric(as.character(data$Sub_metering_2))
 data$Sub_metering_3<- as.numeric(as.character(data$Sub_metering_3))
 
 
-png("plot3.png")
+png("plot3.png", width = 480, height = 480)
 plot(data$Date, data$Sub_metering_1, type = "l",  col = "black", xlab = "", ylab = "Energy sub metering")
 lines(data$Date, data$Sub_metering_2, type = "l", col = "red")
 lines(data$Date, data$Sub_metering_3, type = "l", col = "blue")
