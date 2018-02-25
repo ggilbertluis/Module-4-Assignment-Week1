@@ -14,7 +14,7 @@ data$Sub_metering_1<- as.numeric(as.character(data$Sub_metering_1))
 data$Sub_metering_2<- as.numeric(as.character(data$Sub_metering_2))
 data$Sub_metering_3<- as.numeric(as.character(data$Sub_metering_3))
 
-png("plot4.png")
+png("plot4.png",width = 480, height = 480)
 par(mfrow=c(2, 2))
 plot(data$Date, data$Global_active_power, type = "l", ylab = "Global Active Power", xlab = "" )
 plot(data$Date, data$Voltage, type = "l", ylab = "Voltage", xlab = "datetime" )
