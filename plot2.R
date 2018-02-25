@@ -8,6 +8,6 @@ data$Date <- as.POSIXct(DateTime, format="%Y-%m-%d %H:%M:%S")
 
 data$Global_active_power<- as.numeric(as.character(data$Global_active_power))
 
-png("plot2.png")
+png("plot2.png",width = 480, height = 480)
 plot(data$Date, data$Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)", xlab = "" )
 dev.off()
